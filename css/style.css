@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-image: url(../img/papitasfondonegro.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+h3{
+    font-size: 1.3em;
+}
+
+h4{
+    font-size: 1.2em;
+}
+
+h1,h2,h4{
+    color: rgb(242, 160, 7);
+    background-color: rgb(11, 11, 13, 0.99);
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1{
+    text-align: center;
+    padding: 20px 0px;
+
+}
+
+main section p{
+    color: rgba(128, 128, 128, 1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.115em;
+    line-height: 1.2;
+    font-weight: 400;
+    padding: 20px 0px;
+}
+
+main section form{
+    color: rgba(242, 160, 7, 1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.115em;
+    line-height: 1.2;
+    font-weight: 400;
+    background-color: rgb(11, 11, 13, 0.99);
+}
+
+@media only screen and (min-width: 350px) {
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "promo"
+    "aside"
+    "pie";
+}
+
+#mainNav{
+    grid-area: nav;
+}
+
+#header{
+    grid-area: header;
+}
+
+#promo{
+    grid-area: promo;
+}
+
+#aside{
+    grid-area: aside;
+}
+
+#footer{
+    grid-area: pie;
+}
+
+.contenedorHam{
+    display: grid;
+    width: 100%;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "ham"
+    "aside"
+    "pie";
+
+}
+
+#ham{
+    grid-area: ham;
+    
+}
+#ham h1,
+#ham h2{
+    font-size: 2em;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: rgba(11, 11, 13, 0.99);
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0px;
+
+}
+#ham .galeria figure{
+    text-align: center;
+}
+    #ham .galeria figure img{
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+
+    }
+        #ham .galeria figure figcaption{
+            font-size: 1.5em;
+            color:rgba(242, 160, 7, 1) ;
+            padding: 10px 5px;
+            margin: 5px;
+        
+            background-color: rgb(128, 128, 128, 1);
+
+        }
+            #ham .galeria p.precio{
+                color: rgb(242, 160, 7);
+                padding-bottom: 10px;
+                background-color: rgba(11, 11, 13, 0.99);
+
+            }
+
+
+
+
+
+.botonera{
+    padding: 6px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0%;
+}
+
+
+    .botonera ul{   
+        display: flex;
+    }
+
+        .botonera ul li{
+            list-style: none;
+            margin-right: 25px;
+        }
+            .botonera ul li a{
+                color: rgb(242, 160, 7);
+                text-decoration: none;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.5em;
+            }
+            
+            .botonera ul li a:hover{
+                text-decoration: underline;
+                color: rgb(166, 26, 13);
+            }
+
+
+
+.pie{
+    padding: 20px 0px;
+    margin-top: 50px;
+    
+    
+}
+
+.encabezado__img--fluid{
+    width: 100%;
+}
+
+.bg-dark{
+    background-color: rgba(11, 11, 13, 0.99);
+}
+
+.bg-light{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.bg-bordo{
+    background-color: rgba(166, 26, 13);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-color{
+    color:rgb(242, 160, 7);
+    font-family: 'Roboto', sans-serif;
+}
+
+.nosotros__section{
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+    padding: 30px ;
+    border: solid rgb(242, 160, 7) 3px;
+    overflow-y: auto;
+    
+}
+
+.hamburguesas__section{
+    width: 50%;
+    height: auto;
+    margin: 50px auto;
+    padding: 30px ;
+    border: solid rgb(242, 160, 7) 3px;
+    overflow-y: auto;
+    
+}
+
+.mapa__section{
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+    padding: 30px ;
+    border: solid rgb(242, 160, 7) 3px;
+    overflow-y: auto;
+    
+}
+
+.extras__section{
+    width: 40%;
+    height: auto;
+    margin: 50px auto;
+    padding: 30px ;
+    border: solid rgb(242, 160, 7) 3px;
+    overflow-y: auto;
+    
+}
+
+.pedido__section{
+    width: 50%;
+    height: auto;
+    margin: 50px auto;
+    padding: 30px ;
+    border: solid rgb(242, 160, 7) 3px;
+    overflow-y: auto;
+    
+}
+
+.contactanos__section{
+    width: 55%;
+    height: auto;
+    margin: 50px auto;
+    padding: 30px ;
+    border: solid rgb(242, 160, 7) 3px;
+    overflow-y: auto;
+    
+}
+
+.promociones{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+#hamburguesasExtras h1,
+#hamburguesasExtras h2{
+    font-size: 2em;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: rgba(11, 11, 13, 0.99);
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0px;
+    
+}
+
+#hamburguesasExtras .galeria{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+    #hamburguesasExtras .galeria figure{
+        text-align: center;
+        
+    }
+        #hamburguesasExtras .galeria figure img{
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            
+        }
+        #hamburguesasExtras .galeria figure figcaption{
+            font-size: 1.5em;
+            color:rgba(242, 160, 7, 1) ;
+            padding: 10px 5px;
+            background-color: rgb(128, 128, 128, 1);
+        }
+
+        #hamburguesasExtras .galeria p.precio{
+            color: rgb(242, 160, 7);
+            padding-bottom: 10px;
+            background-color: rgba(11, 11, 13, 0.99);
+
+        }
+
+        .hamburguesasAside{
+            width: 200px;
+            height: 100px;
+            margin: 50px auto;
+            padding: 30px ;
+            border: solid rgb(242, 160, 7) 3px;
+            overflow-y: auto;
+            
+        }
+
+        .degrade-oscuro{
+            background: linear-gradient(to top, grey, black)
+
+    }
+        .transform:hover{
+            transform: translateX(10px);
+            transition: transform 1s;
+        }
+
+        @media only screen and (min-width: 1200px) {
+
+            .botonera{
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .contenedorHam{
+                grid-template-columns: 70vw 30vw;
+                grid-gap: 15px;
+                grid-template-areas: 
+                "nav nav"
+                "header header"
+                "ham aside"
+                "ham aside"
+                "pie pie";
+            }
+
+            .contenedor{
+                grid-template-columns: 60vw 40vw;
+                grid-template-areas: 
+                "nav nav"
+                "header header"
+                "promo aside"
+                "promo aside"
+                "pie pie";
+            }
+            #aside{
+                justify-content: center;
+            }
+        }
