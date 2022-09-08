@@ -188,11 +188,13 @@ main section form{
     
 }
 
+
+
 .encabezado__img--fluid{
     width: 100%;
 }
 
-.bg-dark{
+.bg-negro{
     background-color: rgba(11, 11, 13, 0.99);
 }
 
@@ -213,6 +215,11 @@ main section form{
 }
 
 .text-color{
+    color:rgb(242, 160, 7);
+    font-family: 'Roboto', sans-serif;
+}
+
+.textMostaza{
     color:rgb(242, 160, 7);
     font-family: 'Roboto', sans-serif;
 }
