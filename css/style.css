@@ -346,6 +346,10 @@ main section form{
             .botonera{
                 flex-direction: row;
                 justify-content: space-between;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
             }
             .contenedorHam{
                 grid-template-columns: 70vw 30vw;
