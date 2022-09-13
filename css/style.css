@@ -29,7 +29,6 @@ h4{
 
 h1,h2,h4{
     color: rgb(242, 160, 7);
-    background-color: rgb(11, 11, 13, 0.99);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -202,10 +201,6 @@ main section form{
     background-color: rgba(128, 128, 128, 0.5);
 }
 
-.bg-bordo{
-    background-color: rgba(166, 26, 13);
-}
-
 .text-center{
     text-align: center;
 }
@@ -219,10 +214,6 @@ main section form{
     font-family: 'Roboto', sans-serif;
 }
 
-.textMostaza{
-    color:rgb(242, 160, 7);
-    font-family: 'Roboto', sans-serif;
-}
 
 .nosotros__section{
     width: 90%;
