@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-image: url(../Img/papitasfondonegro.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+h1{
+    font-size: $fontXl;
+}
+
+h2{
+    font-size: $fontLg;
+}
+
+h3{
+    font-size: $fontMd;
+}
+
+h4{
+    font-size: $fontSm;
+}
+
+h1,h2,h3,h4{
+    color: $mainColor;
+    font-family: $mainFont;
+}
+
+header h1{
+    text-align: center;
+    padding: 20px 0px;
+
+}
+
+main section p{
+    color: $secondaryColor;
+    font-family: $mainFont;
+    font-size: 1.115em;
+    line-height: 1.2;
+    font-weight: 400;
+    padding: 20px 0px;
+}
+
+.pie{
+    padding: 20px 0px;
+    margin-top: 50px;
+    
+    
+}
+
+.encabezado__img--fluid{
+    width: 100%;
+}
+
+.bg-negro{
+    background-color: rgba(11, 11, 13, 0.99);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-color{
+    color: $mainColor;
+    font-family: '$mainFont;'
+}
+

@@ -1,0 +1,56 @@
+@media only screen and (min-width: 350px) {
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "promo"
+    "aside"
+    "pie";
+}
+
+#mainNav{
+    grid-area: nav;
+}
+
+#header{
+    grid-area: header;
+}
+
+#promo{
+    grid-area: promo;
+}
+
+#aside{
+    grid-area: aside;
+}
+
+#footer{
+    grid-area: pie;
+}
+
+.promociones{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+    }
+
+@media only screen and (min-width: 1200px) {
+    .contenedor{
+        grid-template-columns: 60vw 40vw;
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "promo aside"
+        "promo aside"
+        "pie pie";
+    }
+    #aside{
+        justify-content: center;
+    }
+}

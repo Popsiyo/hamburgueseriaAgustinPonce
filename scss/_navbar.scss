@@ -1,0 +1,27 @@
+.botonera{
+    padding: 6px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0%;
+    ul{
+        display: flex;
+    }
+    ul li{
+        list-style: none;
+        margin-right: 25px;
+    }
+    ul li a{
+        color: $mainColor;
+        text-decoration: none;
+        font-family: $mainFont;
+        font-size: fontSm;
+    }
+    
+}
+.botonera ul li a:hover{
+    text-decoration: underline;
+    color: rgb(166, 26, 13);
+}
