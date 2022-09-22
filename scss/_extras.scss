@@ -3,7 +3,7 @@
     height: auto;
     margin: 50px auto;
     padding: 30px ;
-    border: solid rgb(242, 160, 7) 3px;
+    border: solid $mainColor 3px;
     overflow-y: auto;
     
 }
@@ -14,7 +14,7 @@
     text-align: center;
     padding: 20px 0px;
     background-color: rgba(11, 11, 13, 0.99);
-    font-family: 'Roboto', sans-serif;
+    font-family: $mainFont;
     margin: 20px 0px;
     
 }
@@ -23,45 +23,41 @@
     margin: 20px;
     display: flex;
     justify-content: space-around;
-}
-    #hamburguesasExtras .galeria figure{
+    figure{
         text-align: center;
-        
     }
-        #hamburguesasExtras .galeria figure img{
-            border-top-left-radius: 30px;
-            border-bottom-right-radius: 30px;
-            
-        }
-        #hamburguesasExtras .galeria figure figcaption{
-            font-size: 1.5em;
-            color:rgba(242, 160, 7, 1) ;
-            padding: 10px 5px;
-            background-color: rgb(128, 128, 128, 1);
-        }
-
-        #hamburguesasExtras .galeria p.precio{
-            color: rgb(242, 160, 7);
-            padding-bottom: 10px;
-            background-color: rgba(11, 11, 13, 0.99);
-
-        }
-
-        .hamburguesasAside{
-            width: 320px;
-            height: 200px;
-            margin: 50px auto;
-            padding: 30px ;
-            border: solid rgb(242, 160, 7) 3px;
-            overflow-y: auto;
-            
-        }
-
-        .degrade-oscuro{
-            background: linear-gradient(to top, grey, black)
-
+    figure img{
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
     }
-        .transform:hover{
-            transform: translateX(10px);
-            transition: transform 1s;
-        }
+    figure figcaption{
+        font-size: 1.5em;
+        color: $mainColor ;
+        padding: 10px 5px;
+        background-color: $secondaryColor;
+    }
+    p.precio{
+        color: $mainColor;
+        padding-bottom: 10px;
+        background-color: rgba(11, 11, 13, 0.99);
+    }
+}
+
+.hamburguesasAside{
+    width: 20vw;
+    height: 12vw;
+    margin: 50px auto;
+    padding: 30px ;
+    border: solid $mainColor 3px;
+    overflow-y: auto;
+            
+}
+
+.degrade-oscuro{
+     background: linear-gradient(to top, grey, black)
+
+}
+.transform:hover{
+     transform: translateX(10px);
+     transition: transform 1s;
+}
