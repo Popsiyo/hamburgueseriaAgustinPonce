@@ -36,11 +36,9 @@ header h1{
 
 }
 
+
 main section p{
-    color: $secondaryColor;
-    font-family: $mainFont;
-    font-size: 1.115em;
-    line-height: 1.2;
+    @include texto(1.115em, 1.2, $secondaryColor)
     font-weight: 400;
     padding: 20px 0px;
 }

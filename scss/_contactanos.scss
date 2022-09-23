@@ -1,5 +1,5 @@
 main section form{
-    color: $mainColor;
+    color: map-get($map:$paleta, $key: "cuatro" );
     font-family: $mainFont;
     font-size: 1.115em;
     line-height: 1.2;
@@ -7,12 +7,9 @@ main section form{
     background-color: rgb(11, 11, 13, 0.99);
 }
 
-.contactanos__section{
-    width: 55%;
-    height: auto;
-    margin: 50px auto;
-    padding: 30px ;
-    border: solid $mainColor 3px;
-    overflow-y: auto;
-    
+
+
+.box__section-rounded{
+    @extend .box__section;
+    border-radius: 5px;
 }
