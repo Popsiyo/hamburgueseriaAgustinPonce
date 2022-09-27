@@ -323,8 +323,8 @@ main section form{
         }
 
         .hamburguesasAside{
-            width: 20vw;
-            height: 12vw;
+            width: auto;
+            height: 25vh;
             margin: 50px auto;
             padding: 30px ;
             border: solid rgb(242, 160, 7) 3px;
