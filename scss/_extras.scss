@@ -3,7 +3,7 @@
     height: auto;
     margin: 50px auto;
     padding: 30px ;
-    border: solid map-get($map:$paleta , $key: "cuatro" ) 3px;
+    border: solid map-get($map: $paleta , $key: "cuatro" ) 3px;
     overflow-y: auto;
     
 }
@@ -20,9 +20,9 @@
 }
 
 #hamburguesasExtras .galeria{
-    @include flex(row, space-around, center,wrap)
+    @include flex(row, space-around, center,wrap);
     margin: 20px;
-   
+
     figure{
         text-align: center;
     }

@@ -39,9 +39,10 @@ header h1{
 
 main section p{
     @include texto(1.115em, 1.2, $secondaryColor)
-    font-weight: 400;
-    padding: 20px 0px;
+
 }
+
+
 
 .pie{
     padding: 20px 0px;
