@@ -1,3 +1,29 @@
+@media only screen and (min-width: 350px) {
+    .contenedorExtras{
+        display: grid;
+        width: 100%;
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "nav"
+        "header"
+        "extras"
+        "pie";
+    
+    }
+    #mainNav{
+        grid-area: nav;
+    }
+    
+    #header{
+        grid-area: header;
+    }
+    
+    #footer{
+        grid-area: pie;
+    }
+
 .extras__section{
     width: 40%;
     height: auto;
@@ -16,6 +42,7 @@
     background-color: rgba(11, 11, 13, 0.99);
     font-family: $mainFont;
     margin: 20px 0px;
+    grid-area: extras;
     
 }
 
@@ -60,4 +87,29 @@
 .transform:hover{
      transform: translateX(10px);
      transition: transform 1s;
+}
+@media only screen and (min-width: 1200px) {
+
+    .botonera{
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+}
+.contenedorExtras{
+    grid-template-columns: 70vw 30vw;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "nav nav"
+    "header header"
+    "extras extras"
+    "extras extras"
+    "pie pie";
+ }
+#aside{
+     justify-content: center;
+ }
+}
 }

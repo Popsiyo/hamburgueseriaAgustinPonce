@@ -28,48 +28,58 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-
-  <nav class="bg-negro botonera">
-    <a href="index.html">
-        <img src="Img/Popsitos.png" alt="logo de Popsito's">
-    </a>
-    <ul>
-        <li>
-            <a href="nosotros.html">Nosotros</a>
-        </li>
-        <li>
-            <a href=hamburguesas.html">Hamburguesas</a>
-        </li>
-        <li>
-            <a href="extras.html">Acompañamientos y Bebidas</a>
-        </li>
-        <li>
-            <a href="pedido.html">Hacé tu pedido</a>
-        </li>
-        <li>
-            <a href="contactanos.html">Contactanos</a>
-        </li>
-
-    </ul>
-  </nav>  
-  <header>
+    
+    <div class="contenedorNosotros">
+    <nav class="navbar navbar-expand-xxl botonera navbar-dark bg-negro sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="Img/Popsitos.png" alt="Popsitos logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hamburguesas.html">Hamburguesas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="extras.html">Acompañamientos y Bebidas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="pedido.html">Hace tu pedido</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contactanos.html">Contactanos</a>
+              </li>
+  
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <header id="header">
     <img src="Img/header.jpeg" alt="Producto Ilustrativo" class="encabezado__img--fluid">
   </header>
+  <div id="main">
   <main>
     <section class="bg-negro text-center text-color nosotros__section">
         <h1>Quienes somos:</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum impedit at consequuntur omnis incidunt maxime nisi repellat, error, blanditiis aliquam consequatur. Dolor numquam veniam commodi voluptatum odio, laborum saepe assumenda.</p>
+        <p>Popsito's comenzó como un emprendimiento familiar, al fundador le encantaba la parrilla y que mejor idea que emprender en algo que te apasiona. Fuimos fundados en 2020 durante la pandemia, en Martinez. Próximamente estaremos abriendo nuestra nueva sucursal en Vicente López.</p>
         <h2>Nuestra misión:</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores odio omnis molestiae architecto est suscipit similique voluptatem porro consequatur. Ducimus id deserunt magnam? Expedita at sapiente vel vero sint?</p>
+        <p>Buscamos hacer llegar a nuestros clientes hamburguesas de la mejor calidad a un precio accesible al consumidor.</p>
         <h2>Nuestra visión:</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ex dolores adipisci consectetur laborum omnis quae enim modi vel non minus distinctio, quod illum voluptas quam. Culpa magni saepe eveniet.</p>
+        <p>Constantemente buscamos nuevas fórmulas para seguir incrementando la calidad y variedad de nuestros producos.</p>
      </section>
     <section class="text-center bg-negro mapa__section">
         <h3>Nos encontramos en Av. Santa Fe 400, Martínez.</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11062.681009680355!2d-58.51375195822248!3d-34.4786723565228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb04adf4a403b%3A0x7f86e2fcae99964b!2sAv.%20Sta%20Fe%20400%2C%20B1642BYQ%20San%20Isidro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1660259517681!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
-  <footer class="bg-negro text-center">
+</div>
+  <footer class="bg-negro text-center" id="footer">
     <h4>Seguinos en nuestras redes!!!</h4>
     <a href="https://www.facebook.com/" target="_blank">
         <img src="Img/fb.png" alt="Dejanos tu like en facebook!">
@@ -78,6 +88,7 @@
         <img src="Img/ig.png" alt="Seguinos en Instagram!">
     </a>
   </footer>
+</div>
 </body>
 
 </html>

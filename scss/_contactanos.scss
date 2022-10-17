@@ -1,3 +1,32 @@
+@media only screen and (min-width: 350px) {
+    .contenedorContacto{
+        display: grid;
+        width: 100%;
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "nav"
+        "header"
+        "main"
+        "pie";
+    
+    }
+    #mainNav{
+        grid-area: nav;
+    }
+    
+    #header{
+        grid-area: header;
+    }
+    
+    #footer{
+        grid-area: pie;
+    }
+    #mainContacto{
+        grid-area: main;
+    }
+
 main section form{
     color: map-get($map:$paleta, $key: "cuatro" );
     font-family: $mainFont;
@@ -12,4 +41,27 @@ main section form{
 .box__section-rounded{
     @extend .box__section;
     border-radius: 5px;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .botonera{
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+}
+.contenedorContacto{
+    grid-template-columns: 70vw 30vw;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "nav nav"
+    "header header"
+    "main main"
+    "pie pie";
+ }
+
+}
 }
